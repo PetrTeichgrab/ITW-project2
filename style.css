@@ -1,0 +1,202 @@
+/* Global settings */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Top of the page */
+
+body {
+    background-color: rgb(10, 10, 10);
+    color: #eee6e6
+}
+
+header {
+    padding-left: 10%;
+    width: 100%;
+    height: 110vh;
+    background-image: url('images/mainPhoto.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+    margin-right: 15%;
+}
+
+#logo {
+    float: left;
+    height: 20vh;
+    margin-top: 50px;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin-top: 30px;
+    margin-right: 35px;
+    font-size: 27px;
+}
+
+/*https: //css-tricks.com/css-link-hover-effects/*/
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    margin: 0 -.25rem;
+    padding: 0 .25rem;
+    box-shadow: inset 0 0 0 0 #4a9bb8;
+    transition: box-shadow .5s ease-in-out;
+}
+
+nav ul li a:hover {
+    box-shadow: inset 130px 0 0 0 #4a9bb8;
+    color: white;
+}
+
+#line1 {
+    border-top: 2px solid white;
+    width: 700px;
+    float: right;
+    margin-right: 10%;
+}
+
+.backgroundText {
+    padding-top: 20%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: uppercase;
+}
+
+.backgroundText h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.backgroundText p {
+    color: #4a9bb8;
+    font-size: 30px;
+}
+
+/* About me section */
+
+.aboutMeSection {
+    padding-top: 5%;
+    padding-left: 10%;
+}
+
+.aboutMeContainer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: stretch;
+    padding-right: 15%;
+}
+
+.aboutMeContainer .leftColumn {
+    flex-basis: 35%;
+}
+
+.aboutMeContainer .rightColumn {
+    flex-basis: 55%;
+}
+
+.aboutMeContainer .rightColumn h1 {
+    font-size: 35px;
+    color: #4a9bb8;
+}
+
+#line2 {
+    margin-top: 10px;
+    padding-bottom: 10px;
+    border-top: 2px solid white;
+}
+
+.aboutMeText {
+    font-size: 20.5px;
+}
+
+.aboutMePicture {
+    height: 60vh;
+}
+
+/* Cases */
+
+.cases {
+    padding-top: 10%;
+    padding-left: 10%;
+    margin-right: 40%;
+}
+
+.cases h1 {
+    color: #4a9bb8;
+    font-size: 35px;
+}
+
+.casesContainer h1 {
+    color: #4a9bb8;
+    font-size: 25px;
+}
+
+#line3 {
+    margin-top: 10px;
+    padding-bottom: 10px;
+    width: auto;
+    border-top: 2px solid white;
+}
+
+.casesContainer {
+    display: grid;
+    grid-template-rows: [firstRow] auto [secondRow] auto [thirdRow] auto [fourthRow] auto;
+    grid-template-columns: [firstColumn] auto [secondColumn] auto;
+    grid-row-gap: 50px;
+    font-size: 20px;
+}
+
+.magnGlassImg {
+    height: 10vh;
+}
+
+#img1 {
+    margin-top: 20px;
+    grid-row-start: firstRow;
+    grid-row-end: secondRow;
+}
+
+.casesContainer .firstCase {
+    margin-top: 20px;
+    grid-row-start: firstRow;
+    grid-row-end: secondRow;
+    grid-column-start: secondColumn;
+}
+
+#img2 {
+    grid-row-start: secondRow;
+    grid-row-end: thirdRow;
+}
+
+.casesContainer .secondCase {
+    grid-row-start: secondRow;
+    grid-row-end: thirdRow;
+    grid-column-start: secondColumn;
+}
+
+#img3 {
+    grid-row-start: thirdRow;
+    grid-row-end: fourthRow;
+    grid-column-start: firstColumn;
+    grid-column-end: secondColumn;
+}
+
+.casesContainer .thirdCase {
+    grid-row-start: thirdRow;
+    grid-row-end: fourthRow;
+    grid-column-start: secondColumn;
+}
