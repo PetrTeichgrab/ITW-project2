@@ -94,18 +94,20 @@ nav ul li a:hover {
 
 .aboutMeContainer {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     flex-wrap: wrap;
     align-items: stretch;
     padding-right: 15%;
 }
 
 .aboutMeContainer .leftColumn {
+    height: 50vh;
     flex-basis: 35%;
 }
 
 .aboutMeContainer .rightColumn {
-    flex-basis: 55%;
+    height: 70vh;
+    flex-basis: 60%;
 }
 
 .aboutMeContainer .rightColumn h1 {
@@ -124,7 +126,7 @@ nav ul li a:hover {
 }
 
 .aboutMePicture {
-    height: 60vh;
+    height: 70vh;
 }
 
 /* Cases */
