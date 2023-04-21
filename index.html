@@ -8,14 +8,15 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
+    <header id="home">
         <img src="images/SherlockLogo.png" id ="logo">
                 <nav>
                     <ul>
-                        <li><a href = "#">Home</a></li>
+                        <li><a href = "#home">Home</a></li>
                         <li><a href = "#aboutMe">About me</a></li>
-                        <li><a href = "#">Cases</a></li>
-                        <li><a href = "#">Contact us</a></li>
+                        <li><a href = "#cases">Cases</a></li>
+                        <li><a href = "#contact">Contact us</a></li>
+                        <li><a href = "#findUs">Find us</a></li>
                     </ul>
                 </nav>
         <div id="line1"></div>
@@ -56,7 +57,7 @@
             </div>
         </div>
     </section>
-    <section class="cases">
+    <section class="cases" id="cases">
         <h1>Cases</h1>
         <div id="line3"></div>
         <div class="casesContainer">
@@ -91,6 +92,42 @@
                     And then it just stopped with no explanation. I was happy to ignore it but Sherlock was intrigued. I think the thing that intrigued him the most was that I'd received the emails rather than him. Well, I think it irritated him. Well, I know it did. He called me one morning, shouting and demanding to know why the interesting people always emailed me and never him. Sometimes he really is just like a little kid...
                 </p>
             </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="contactContainer">
+            <h1> Contact Me</h1>
+            <div id="line4"></div>
+            <div class="email">
+                <img src="images/email.png" class="icons">
+                <p>Sherlock.Holmes@gmail.com</p>
+            </div>
+            <div class="phone">
+                <img src="images/phone.png" class="icons">
+                <p>+020 725 524 123</p>
+            </div>
+            <div class="secondRow">
+            <form>
+                <input type="text" name="Name" placeholder="Name" required>
+                <input type="email" name="Email" placeholder="Email" required>
+                <input type="phone" name="Phone" placeholder="Phone Number" required>
+                <textarea name = "Message" rows="6" placeholder="Describe your issue"></textarea>
+            </form>
+            <button class="button">Send</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="FindUs" id="finsUs">
+        <div class="findUsContainer">
+            <h1>Find Us</h1>
+            <div id="line5"></div>
+            <div class="Location">
+                <img src="images/location.png" alt="" id="locIcon">
+                <p>221b Baker St, London NW1 6XE, United Kingdom</p>
+            </div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.424670931154!2d-0.1611359879121155!3d51.523770309389825!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761acf33628211%3A0x445d7677a88322e1!2s221B%20Baker%20St%2C%20London%20NW1%206XE%2C%20Velk%C3%A1%20Brit%C3%A1nie!5e0!3m2!1scs!2scz!4v1682113846814!5m2!1scs!2scz" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>  
         </div>
 
 

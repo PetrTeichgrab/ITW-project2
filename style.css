@@ -63,7 +63,7 @@ nav ul li a:hover {
 }
 
 #line1 {
-    border-top: 2px solid white;
+    border-top: 2px solid #4a9bb8;
     width: 700px;
     float: right;
     margin-right: 10%;
@@ -101,12 +101,10 @@ nav ul li a:hover {
 }
 
 .aboutMeContainer .leftColumn {
-    height: 50vh;
     flex-basis: 35%;
 }
 
 .aboutMeContainer .rightColumn {
-    height: 70vh;
     flex-basis: 60%;
 }
 
@@ -126,7 +124,7 @@ nav ul li a:hover {
 }
 
 .aboutMePicture {
-    height: 70vh;
+    height: 450px;
 }
 
 /* Cases */
@@ -163,7 +161,7 @@ nav ul li a:hover {
 }
 
 .magnGlassImg {
-    height: 10vh;
+    height: 60px;
 }
 
 #img1 {
@@ -201,4 +199,127 @@ nav ul li a:hover {
     grid-row-start: thirdRow;
     grid-row-end: fourthRow;
     grid-column-start: secondColumn;
+}
+
+/*contact section*/
+.contactContainer {
+    text-align: center;
+    padding: 10%;
+}
+
+.contactContainer h1 {
+    font-size: 35px;
+    color: #4a9bb8;
+}
+
+.icons {
+    height: 40px;
+}
+
+
+.email,
+.phone {
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.email p,
+.phone p {
+    margin-top: 8px;
+    font-size: 20px;
+}
+
+
+#line4 {
+    margin-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 20%;
+    margin-right: 20%;
+    width: auto;
+    border-top: 2px solid white;
+}
+
+
+.contactContainer form {
+    width: 100%;
+}
+
+form input,
+form textarea {
+    width: 50%;
+    border: 0;
+    padding: 8px;
+    margin: 10px;
+    outline: none;
+    background: #393a3a;
+    color: #d1d8db;
+    font-size: 21px;
+    border-radius: 5px;
+}
+
+.button {
+    border: 0 solid;
+    box-shadow: inset 0 0 20px rgba(255, 255, 255, 0);
+    display: inline-block;
+    outline: 0px;
+    background-color: #4a9bb8;
+    outline-color: #4a9bb8;
+    font-size: 27px;
+    padding: 10px;
+    border-radius: 10px;
+    width: 13%;
+    margin-top: 10px;
+}
+
+.button:hover {
+    border: 1px solid;
+    box-shadow: inset 0 0 20px rgba(10, 71, 86, 0.6), 0 0 20px rgba(52, 130, 142, 0.3);
+    outline-color: rgb(250, 250, 250);
+}
+
+/*Find us section*/
+
+.FindUs {
+    padding: 10%;
+    text-align: center;
+}
+
+.findUsContainer h1 {
+    font-size: 35px;
+    color: #4a9bb8;
+}
+
+#line5 {
+    margin-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 20%;
+    margin-right: 20%;
+    width: auto;
+    border-top: 2px solid white;
+}
+
+.Location {
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#locIcon {
+    height: 65px;
+}
+
+.Location p {
+    padding-left: 20px;
+    margin-top: 20px;
+    font-size: 24px;
+}
+
+iframe {
+    margin-top: 15px;
+    width: 75%;
+    border-radius: 8px;
+    filter: invert(100%);
 }
