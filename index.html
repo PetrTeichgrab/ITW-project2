@@ -8,18 +8,29 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <script>
+            const links = document.querySelectorAll('nav a');
+
+            links.forEach(link => {
+            link.addEventListener('click', (event) => 
+            {   event.preventDefault();
+                const ID = link.getAttribute('href');
+                const E = document.querySelector(ID);
+                E.scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+    </script>
     <header id="home">
         <img src="images/SherlockLogo.png" id ="logo">
                 <nav>
                     <ul>
-                        <li><a href = "#home">Home</a></li>
                         <li><a href = "#aboutMe">About me</a></li>
                         <li><a href = "#cases">Cases</a></li>
                         <li><a href = "#contact">Contact us</a></li>
                         <li><a href = "#findUs">Find us</a></li>
                     </ul>
+                    <div id="line1"></div>
                 </nav>
-        <div id="line1"></div>
         <div class="backgroundText">
             <h1>Sherlock Holmes</h1>
             <p>
@@ -92,6 +103,10 @@
                     And then it just stopped with no explanation. I was happy to ignore it but Sherlock was intrigued. I think the thing that intrigued him the most was that I'd received the emails rather than him. Well, I think it irritated him. Well, I know it did. He called me one morning, shouting and demanding to know why the interesting people always emailed me and never him. Sometimes he really is just like a little kid...
                 </p>
             </div>
+            <img src="images/lupa.png" class="magnGlassImg" id="img4">
+            <div class="More">
+                <h1><a href="cases.html">More Cases</a></h1>
+            </div>
         </div>
     </section>
 
@@ -119,7 +134,7 @@
         </div>
     </section>
 
-    <section class="FindUs" id="finsUs">
+    <section class="FindUs" id="findUs">
         <div class="findUsContainer">
             <h1>Find Us</h1>
             <div id="line5"></div>

@@ -1,4 +1,7 @@
 /* Global settings */
+html {
+    scroll-behavior: smooth;
+}
 
 * {
     padding: 0;
@@ -64,9 +67,8 @@ nav ul li a:hover {
 
 #line1 {
     border-top: 2px solid #4a9bb8;
-    width: 700px;
-    float: right;
-    margin-right: 10%;
+    margin-top: 15px;
+    width: 550px;
 }
 
 .backgroundText {
@@ -133,6 +135,7 @@ nav ul li a:hover {
     padding-top: 10%;
     padding-left: 10%;
     margin-right: 40%;
+    text-decoration: none;
 }
 
 .cases h1 {
@@ -199,6 +202,16 @@ nav ul li a:hover {
     grid-row-start: thirdRow;
     grid-row-end: fourthRow;
     grid-column-start: secondColumn;
+}
+
+.casesContainer .More {
+    margin-top: 10px;
+}
+
+.casesContainer .More a {
+    color: #4a9bb8;
+    text-decoration: none;
+    font-size: 25px;
 }
 
 /*contact section*/
