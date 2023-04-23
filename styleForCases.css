@@ -1,10 +1,15 @@
+/*shared styles*/
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-/* Top of the page */
+.CaseList a {
+    text-decoration: none;
+    color: white;
+}
 
 body {
     margin-left: 20%;
@@ -12,10 +17,11 @@ body {
     margin-top: 7%;
     margin-bottom: 5%;
     background: rgb(11, 11, 11);
-    background: linear-gradient(90deg, rgba(11, 11, 11, 1) 0%, rgba(30, 63, 65, 1) 50%, rgba(11, 11, 11, 1) 100%);
+    background: linear-gradient(90deg, rgba(11, 11, 11, 1) 0%, rgba(27, 41, 42, 1) 50%, rgba(11, 11, 11, 1) 100%);
     color: #eee6e6
 }
 
+/* case*/
 .case {
     font-size: 22px;
 }
@@ -34,6 +40,37 @@ body {
     border-top: 2px solid white;
 }
 
-.case1 {
-    border: 2px solid gray;
+/*case list*/
+
+.CaseList .caseTitle {
+    text-align: center;
+    border: 2px solid rgba(146, 143, 141, 0.863);
+    ;
+    padding: 15px 20px 15px 20px;
+    margin-top: 25px;
+    margin-left: 18%;
+    margin-right: 18%;
+    background-color: rgba(146, 143, 141, 0.863);
+    ;
+    border-radius: 12px;
+}
+
+@media (max-width: 768px) {
+    .CaseList .caseTitle {
+        text-align: center;
+        border: 2px solid rgba(146, 143, 141, 0.863);
+        padding: 15px 20px 15px 20px;
+        margin-top: 25px;
+        margin-right: 1px;
+        margin-left: 1px;
+        width: 100%;
+        background-color: rgba(146, 143, 141, 0.863);
+        border-radius: 12px;
+    }
+
+    body {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
 }

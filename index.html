@@ -6,11 +6,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sherlock Holmes</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/SherlockLogo.png"/>
 </head>
 <body>
-    <script>
-            const links = document.querySelectorAll('nav a');
 
+    <!-- TOP OF THE PAGE -->
+
+    <div class="mobileMenu">
+            <nav>
+            <ul>
+                <li><a href="#aboutMe">About me</a></li>
+                <li><a href="#cases">Cases</a></li>
+                <li><a href="#contact">Contact us</a></li>
+                <li><a href="#findUs">Find us</a></li>
+            </ul>
+        </nav>
+        </div>
+    <header id="home">
+        <img src="images/SherlockLogo.png" alt="Background picture of sherlock" id ="logo">
+        <div class="pcMenu">
+        <nav>
+            <ul>
+                <li><a href="#aboutMe">About me</a></li>
+                <li><a href="#cases">Cases</a></li>
+                <li><a href="#contact">Contact us</a></li>
+                <li><a href="#findUs">Find us</a></li>
+                <div id="line1"></div>
+            </ul>
+        </nav>
+        </div>
+        
+        <script>
+            const links = document.querySelectorAll('nav a');
             links.forEach(link => {
             link.addEventListener('click', (event) => 
             {   event.preventDefault();
@@ -20,17 +47,8 @@
             });
         });
     </script>
-    <header id="home">
-        <img src="images/SherlockLogo.png" id ="logo">
-                <nav>
-                    <ul>
-                        <li><a href = "#aboutMe">About me</a></li>
-                        <li><a href = "#cases">Cases</a></li>
-                        <li><a href = "#contact">Contact us</a></li>
-                        <li><a href = "#findUs">Find us</a></li>
-                    </ul>
-                    <div id="line1"></div>
-                </nav>
+
+        </div>
         <div class="backgroundText">
             <h1>Sherlock Holmes</h1>
             <p>
@@ -39,10 +57,13 @@
             </p>
         </div>
     </header>
+    
+    <!-- ABOUT ME SECTION -->
+
     <section class="aboutMeSection" id="aboutMe">
         <div class="aboutMeContainer">
             <div class="leftColumn">
-                <img src="images/sherlockAboutMeRemovedBg.png" class="aboutMePicture">
+                <img src="images/sherlockAboutMeRemovedBg.png" alt="picture of sherlock" class="aboutMePicture">
             </div>
             <div class="rightColumn">
                 <h1>About Me</h1>
@@ -68,11 +89,14 @@
             </div>
         </div>
     </section>
+
+    <!-- CASES SECTION -->
+
     <section class="cases" id="cases">
         <h1>Cases</h1>
         <div id="line3"></div>
         <div class="casesContainer">
-            <img src="images/lupa.png" class="magnGlassImg" id="img1">
+            <img src="images/lupa.png" class="magnGlassImg" alt="picture of magnifying glass" id="img1">
             <div class="firstCase">
                 <h1>The Mayfly Man</h1>
                 <p>
@@ -83,7 +107,7 @@
                     The client (she's asked me not to reveal her name) told us that she'd been on a date and that everything had gone well. He'd been the perfect gentleman, apparently. They'd swapped numbers but, when he hadn't got in touch, she'd gone to his flat to see if he was okay. And it turns out, he wasn't...
                 </p>
             </div>
-            <img src="images/lupa.png" class="magnGlassImg" id="img2">
+            <img src="images/lupa.png" class="magnGlassImg" alt="picture of magnifying glass"  id="img2">
             <div class="secondCase">
                 <h1>The Hollow Client</h1>
                 <p>Jack Griffin certainly knew how to make an entrance. We'd been to a suit-fitting for the wedding and when we got back, there he was. Or rather, there he wasn't. </p>
@@ -92,7 +116,7 @@
                     Because there, sitting in my chair, was Jack Griffin's suit. Just his suit. Without him in it. He'd emailed us a few days earlier asking for our help. A student at Goldsmiths University, he'd wanted us to investigate what he described as his 'invisibility'. It had started a few weeks before when his flatmate, Alan Flanagan, had bumped into him, claiming that he literally hadn't seen Jack standing there. They both just dismissed it but then it happened again...
                 </p>
             </div>
-            <img src="images/lupa.png" class="magnGlassImg" id="img3">
+            <img src="images/lupa.png" class="magnGlassImg" alt="picture of magnifying glass"  id="img3">
             <div class="thirdCase">
                 <h1>The Poison Giant</h1>
                 <p>
@@ -103,23 +127,25 @@
                     And then it just stopped with no explanation. I was happy to ignore it but Sherlock was intrigued. I think the thing that intrigued him the most was that I'd received the emails rather than him. Well, I think it irritated him. Well, I know it did. He called me one morning, shouting and demanding to know why the interesting people always emailed me and never him. Sometimes he really is just like a little kid...
                 </p>
             </div>
-            <img src="images/lupa.png" class="magnGlassImg" id="img4">
+            <img src="images/lupa.png" class="magnGlassImg" alt="picture of magnifying glass" id="img4">
             <div class="More">
                 <h1><a href="cases.html">More Cases</a></h1>
             </div>
         </div>
     </section>
 
+    <!-- CONTACT SECTION -->
+
     <section class="contact" id="contact">
         <div class="contactContainer">
             <h1> Contact Me</h1>
             <div id="line4"></div>
             <div class="email">
-                <img src="images/email.png" class="icons">
+                <img src="images/email.png" class="icons" alt="at-sign icon">
                 <p>Sherlock.Holmes@gmail.com</p>
             </div>
             <div class="phone">
-                <img src="images/phone.png" class="icons">
+                <img src="images/phone.png" class="icons" alt="phone icon">
                 <p>+020 725 524 123</p>
             </div>
             <div class="secondRow">
@@ -134,18 +160,18 @@
         </div>
     </section>
 
+    <!-- FIND US SECTION -->
+
     <section class="FindUs" id="findUs">
         <div class="findUsContainer">
             <h1>Find Us</h1>
             <div id="line5"></div>
             <div class="Location">
-                <img src="images/location.png" alt="" id="locIcon">
+                <img src="images/location.png" alt="Location Icon" id="locIcon">
                 <p>221b Baker St, London NW1 6XE, United Kingdom</p>
             </div>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.424670931154!2d-0.1611359879121155!3d51.523770309389825!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761acf33628211%3A0x445d7677a88322e1!2s221B%20Baker%20St%2C%20London%20NW1%206XE%2C%20Velk%C3%A1%20Brit%C3%A1nie!5e0!3m2!1scs!2scz!4v1682113846814!5m2!1scs!2scz" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>  
         </div>
-
-
     </section>
 </body>
 </html>

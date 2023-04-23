@@ -27,7 +27,7 @@ header {
 }
 
 
-nav {
+.pcMenu nav {
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -42,7 +42,7 @@ nav {
     margin-top: 50px;
 }
 
-nav ul li {
+.pcMenu nav ul li {
     display: inline-block;
     list-style: none;
     margin-top: 30px;
@@ -68,7 +68,7 @@ nav ul li a:hover {
 #line1 {
     border-top: 2px solid #4a9bb8;
     margin-top: 15px;
-    width: 550px;
+    width: 490px;
 }
 
 .backgroundText {
@@ -215,6 +215,7 @@ nav ul li a:hover {
 }
 
 /*contact section*/
+
 .contactContainer {
     text-align: center;
     padding: 10%;
@@ -282,7 +283,7 @@ form textarea {
     font-size: 27px;
     padding: 10px;
     border-radius: 10px;
-    width: 13%;
+    width: 82px;
     margin-top: 10px;
 }
 
@@ -335,4 +336,116 @@ iframe {
     width: 75%;
     border-radius: 8px;
     filter: invert(100%);
+}
+
+/* Responsive desing */
+
+.mobileMenu {
+    display: none;
+}
+
+@media (max-width: 768px) {
+
+    .mobileMenu {
+        display: block;
+    }
+
+    .mobileMenu ul li {
+        margin: 10px 0;
+        list-style: none;
+        font-size: 27px;
+    }
+
+
+    .mobileMenu ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+        list-style-type: none;
+        background-color: black;
+        position: relative;
+        top: 80%;
+        width: 100%;
+    }
+
+    .pcMenu {
+        display: none;
+    }
+
+    .mobileMenu {
+        width: 100%;
+    }
+
+    #line1 {
+        display: none;
+    }
+
+    header {
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        height: 100vh;
+        background-image: url('images/mainPhotoResp.jpg');
+        background-size: cover;
+    }
+
+    #logo {
+        display: none;
+    }
+
+    .backgroundText {
+        text-align: center;
+    }
+
+    .backgroundText h1 {
+        padding-top: 40%;
+        font-size: 40px;
+        margin-bottom: 20px;
+    }
+
+    .backgroundText p {
+        color: #18cfeb;
+        font-size: 30px;
+    }
+
+    /* responsive about me section */
+
+    .aboutMeSection {
+        text-align: center;
+        padding-top: 5%;
+        padding-left: 10%;
+    }
+
+    .aboutMeContainer {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: stretch;
+        padding-right: 15%;
+    }
+
+    .aboutMeContainer .rightColumn {
+        margin-top: 10%;
+        flex-basis: 90%;
+    }
+
+    /* cases section responsive */
+
+    .cases {
+        padding-top: 10%;
+        padding-left: 10%;
+        margin-right: 20%;
+        text-decoration: none;
+    }
+
+    /* Find us section responsive */
+
+    .Location p {
+        padding-left: 0;
+        margin-top: 20px;
+        font-size: 24px;
+    }
 }
